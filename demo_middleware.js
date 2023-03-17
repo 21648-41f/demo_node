@@ -22,6 +22,7 @@ app.use(cors());    // Middleware qui autorise le CORS (cross-origin)
 app.put("*", authBasic);
 app.delete("*", authBasic);
 app.post("*", authBasic);
+
 app.put("*", (req, res)=>{
     res.json(bieres);
 })
